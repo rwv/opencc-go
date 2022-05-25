@@ -2,8 +2,11 @@ package conversion
 
 import "github.com/rwv/opencc-go/dictionary"
 
+type ConversionType int
+
 const (
-	HK2S = iota
+	_ ConversionType = iota
+	HK2S
 	S2HK
 	S2T
 	S2TW

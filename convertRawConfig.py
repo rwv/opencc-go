@@ -53,4 +53,30 @@ for file in files:
         with open(f"conversion/{upperConfigNameVariable}.go", "w") as f:
             f.write(outputFile)
 
+
+outputFile = "package conversion\n\n"
+
+outputFile += "func GetConfig(conversion ConversionType) ConfigType {\n"
+outputFile += "\tswitch conversion {\n"
+
+for file in files:
+    basename = os.path.basename(file)
+    configName = basename.split(".")[0]
+
+    upperConfigName = configName.upper()
+
+    upperConfigNameVariable = upperConfigName +"Config"
+
+    outputFile += f"\tcase {upperConfigName}:\n"
+    outputFile += f"\t\treturn {upperConfigNameVariable}\n"
+
+outputFile += """	default:
+		return ConfigType{}
+	}
+}
+"""
+
+with open(f"conversion/GetConfig.go", "w") as f:
+    f.write(outputFile)
+
 os.system("go fmt ./conversion/*")
