@@ -8,7 +8,7 @@ for file in files:
     basename = os.path.basename(file)
     dictionaryName = basename.split(".")[0]
 
-    outputFile = "package dictionary\n"
+    outputFile = "package dictionary\n\n"
     outputFile += "var "+ dictionaryName + " = map[string]string{\n"
 
     with open(file, "r") as f:
