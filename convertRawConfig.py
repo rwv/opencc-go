@@ -52,3 +52,5 @@ for file in files:
 
         with open(f"conversion/{upperConfigNameVariable}.go", "w") as f:
             f.write(outputFile)
+
+os.system("go fmt ./conversion/*")

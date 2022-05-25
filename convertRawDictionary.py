@@ -38,3 +38,5 @@ outputFile += ")\n"
 
 with open(f"dictionary/DictionaryTypes.go", "w") as f:
     f.write(outputFile)
+
+os.system("go fmt ./dictionary/*")
