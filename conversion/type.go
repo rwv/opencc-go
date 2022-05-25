@@ -1,5 +1,7 @@
 package conversion
 
+import "github.com/rwv/opencc-go/dictionary"
+
 const (
 	HK2S = iota
 	S2HK
@@ -12,3 +14,11 @@ const (
 	TW2S
 	TW2SP
 )
+
+type ConversionChainItem []dictionary.DictionaryType
+
+type ConfigType struct {
+	Name            string
+	Segmentation    dictionary.DictionaryType
+	ConversionChain []ConversionChainItem
+}
