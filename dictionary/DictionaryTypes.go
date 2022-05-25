@@ -1,7 +1,7 @@
 package dictionary
 
 const (
-	 _ DictionaryType = iota
+	_ DictionaryType = iota
 	TWPhrasesRevType
 	HKVariantsPhrasesType
 	STPhrasesType
