@@ -15,6 +15,7 @@ for file in files:
         lines = f.readlines()
         for line in lines:
             mapping = line.split("\t")
+            assert len(mapping) == 2
             if len(mapping) == 2:
                 outputFile += f'	"{mapping[0]}": "{mapping[1].strip()}",\n'
 
