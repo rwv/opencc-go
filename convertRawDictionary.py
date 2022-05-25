@@ -22,3 +22,19 @@ for file in files:
 
     with open(f"dictionary/{dictionaryName}.go", "w") as f:
         f.write(outputFile)
+
+# Write types to file
+
+outputFile = "package dictionary\n\n"
+outputFile += "const (\n"
+outputFile += "\t _ DictionaryType = iota\n"
+
+for file in files:
+    basename = os.path.basename(file)
+    dictionaryName = basename.split(".")[0]
+    outputFile += f"\t{dictionaryName}Type\n"
+
+outputFile += ")\n"
+
+with open(f"dictionary/DictionaryTypes.go", "w") as f:
+    f.write(outputFile)
