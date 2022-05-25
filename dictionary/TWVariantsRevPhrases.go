@@ -1,6 +1,6 @@
 package dictionary
 
-var TWVariantsRevPhrases = map[string]string{
+var TWVariantsRevPhrases = Dictionary{
 	"凶事": "凶事",
 	"凶信": "凶信",
 	"凶兆": "凶兆",

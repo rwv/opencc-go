@@ -1,6 +1,6 @@
 package dictionary
 
-var STCharacters = map[string]string{
+var STCharacters = Dictionary{
 	"㐷": "傌",
 	"㐹": "㑶 㐹",
 	"㐽": "偑",

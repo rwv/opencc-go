@@ -1,6 +1,6 @@
 package dictionary
 
-var HKVariants = map[string]string{
+var HKVariants = Dictionary{
 	"僞": "偽",
 	"兌": "兑",
 	"冑": "胄",

@@ -1,6 +1,6 @@
 package dictionary
 
-var TWPhrasesName = map[string]string{
+var TWPhrasesName = Dictionary{
 	"乍得": "查德",
 	"也門": "葉門",
 	"仙童半導體": "快捷半導體",

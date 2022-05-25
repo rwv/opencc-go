@@ -1,6 +1,6 @@
 package dictionary
 
-var JPVariants = map[string]string{
+var JPVariants = Dictionary{
 	"乘": "乗",
 	"亂": "乱",
 	"亙": "亘",

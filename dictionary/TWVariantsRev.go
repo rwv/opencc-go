@@ -1,6 +1,6 @@
 package dictionary
 
-var TWVariantsRev = map[string]string{
+var TWVariantsRev = Dictionary{
 	"鯰": "鮎",
 	"粽": "糉",
 	"嫻": "嫺",

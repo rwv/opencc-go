@@ -1,6 +1,6 @@
 package dictionary
 
-var HKVariantsPhrases = map[string]string{
+var HKVariantsPhrases = Dictionary{
 	"南涌": "南涌",
 	"大欖涌": "大欖涌",
 	"大涌": "大涌",

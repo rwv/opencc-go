@@ -1,6 +1,6 @@
 package dictionary
 
-var HKVariantsRev = map[string]string{
+var HKVariantsRev = Dictionary{
 	"脱": "脫",
 	"媯": "嬀",
 	"歎": "嘆",

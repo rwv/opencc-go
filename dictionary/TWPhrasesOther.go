@@ -1,6 +1,6 @@
 package dictionary
 
-var TWPhrasesOther = map[string]string{
+var TWPhrasesOther = Dictionary{
 	"元音": "母音",
 	"出租車": "計程車",
 	"自行車": "腳踏車",

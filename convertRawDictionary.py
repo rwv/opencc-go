@@ -9,7 +9,7 @@ for file in files:
     dictionaryName = basename.split(".")[0]
 
     outputFile = "package dictionary\n\n"
-    outputFile += "var "+ dictionaryName + " = map[string]string{\n"
+    outputFile += "var "+ dictionaryName + " = Dictionary{\n"
 
     with open(file, "r") as f:
         lines = f.readlines()

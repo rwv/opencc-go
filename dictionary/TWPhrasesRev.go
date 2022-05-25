@@ -1,6 +1,6 @@
 package dictionary
 
-var TWPhrasesRev = map[string]string{
+var TWPhrasesRev = Dictionary{
 	"函式": "函數",
 	"喬治亞": "格魯吉亞",
 	"組譯": "彙編",

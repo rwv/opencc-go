@@ -1,6 +1,6 @@
 package dictionary
 
-var HKVariantsRevPhrases = map[string]string{
+var HKVariantsRevPhrases = Dictionary{
 	"七星巖": "七星巖",
 	"世胄": "世胄",
 	"介胄": "介冑",

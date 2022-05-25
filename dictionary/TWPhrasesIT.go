@@ -1,6 +1,6 @@
 package dictionary
 
-var TWPhrasesIT = map[string]string{
+var TWPhrasesIT = Dictionary{
 	"PN結": "PN接面",
 	"SQL注入": "SQL隱碼攻擊",
 	"SQL注入攻擊": "SQL隱碼攻擊",

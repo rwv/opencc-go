@@ -1,6 +1,6 @@
 package dictionary
 
-var TWVariants = map[string]string{
+var TWVariants = Dictionary{
 	"僞": "偽",
 	"兇": "凶",
 	"啓": "啟",

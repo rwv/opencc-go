@@ -1,6 +1,6 @@
 package dictionary
 
-var STPhrases = map[string]string{
+var STPhrases = Dictionary{
 	"㓦划": "㓦劃",
 	"一丝不挂": "一絲不掛",
 	"一了心愿": "一了心願",

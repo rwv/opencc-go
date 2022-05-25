@@ -1,6 +1,6 @@
 package dictionary
 
-var TSPhrases = map[string]string{
+var TSPhrases = Dictionary{
 	"一目瞭然": "一目了然",
 	"上鍊": "上链",
 	"不瞭解": "不了解",
